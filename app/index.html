@@ -1,0 +1,380 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>旅游会议服务</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/FrozenUI/1.3.0/css/frozen.css" />
+    <link rel="stylesheet" href="http://7xp0c4.com2.z0.glb.qiniucdn.com/iconfont-1.2.css" />
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    <div class="ui-loading-block show" id="loading">
+        <div class="ui-loading-cnt">
+            <i class="ui-loading-bright"></i>
+            <p>正在加载中...</p>
+        </div>
+    </div>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="Index" class="fadeIn animated">
+        <header class="ui-header ui-header-positive ui-border-b">
+            <h1>订房服务</h1>
+            <a href="#food" class="ui-btn">去订餐</a>
+        </header>
+        <div id="selectForm">
+          <div class="ui-form-item ui-border-tb">
+            <label>入住日期</label>
+            <div class="ui-select-group">
+                <div class="ui-select">
+                    <select>
+                        <option selected="">2015</option>
+                        <option>2016</option>
+                    </select>
+                </div>
+                <div class="ui-select">
+                    <select>
+                        <option>01</option>
+                        <option>02</option>
+                        <option selected>12</option>
+                    </select>
+                </div>
+                <div class="ui-select">
+                    <select>
+                        <option>01</option>
+                        <option selected="">02</option>
+                        <option>03</option>
+                    </select>
+                </div>
+            </div>
+          </div>
+          <div class="ui-form-item ui-border-b">
+            <label>离店日期</label>
+            <div class="ui-select-group">
+                <div class="ui-select">
+                    <select>
+                        <option selected="">2015</option>
+                        <option>2016</option>
+                    </select>
+                </div>
+                <div class="ui-select">
+                    <select>
+                        <option>03</option>
+                        <option>04</option>
+                        <option selected>12</option>
+                    </select>
+                </div>
+                <div class="ui-select">
+                    <select>
+                        <option>21</option>
+                        <option selected="">22</option>
+                        <option>23</option>
+                    </select>
+                </div>
+            </div>
+          </div>
+          <div class="sub-box">
+              <button id="selectSave">
+                  查找房间 
+              </button>
+          </div>
+          <div class="notice-info">
+            现可查 2015年12月1日 - 2016年3月15日 执行房价。<br>
+            注：1、本查询房价仅限于淡季现付的单位和个人，凡是挂账签单的仍按照原来协议价执行。
+            <br>
+              2、节假日房价：国家法定假日价格另行通知，请联系销售部经理：<a href="tel:15082202290">徐溶 15082202290</a>
+          </div>  
+        </div>
+        
+        
+        
+    </div>
+    <section id="selectResult" class="fadeIn animated hide">
+        <header class="ui-header ui-header-positive ui-border-b">
+          <i class="ui-icon-return" onclick="history.back()"></i>
+            <h1>查找房间</h1>
+          <a href="#food" class="ui-btn">去订餐</a>
+        </header>
+        <div id="roomList">
+          <ul class="ui-list ui-border-tb">
+              <li class="ui-border-t">
+                  <div class="ui-list-info">
+                      <h4 class="ui-nowrap">
+                        豪华套房 <span>送自助早餐</span>
+                      </h4>
+                      <p class="ui-nowrap">
+                        ￥<span>580.00</span> /晚 <em>剩余：2间</em>
+                      </p>
+                  </div>
+                  <div class="btn-box">
+                    <div class="add-item"><i class="iconfont icon-plus"></i></div>
+                  </div>
+              </li>
+              <li class="ui-border-t">
+                  <div class="ui-list-info">
+                      <h4 class="ui-nowrap">
+                        商务套房 <span>送自助早餐</span>
+                      </h4>
+                      <p class="ui-nowrap">
+                        ￥<span>480.00</span> /晚 <em>剩余：4间</em>
+                      </p>
+                  </div>
+                  <div class="btn-box">
+                    <div class="add-item"><i class="iconfont icon-plus"></i></div>
+                  </div>
+              </li>
+              <li class="ui-border-t">
+                  <div class="ui-list-info">
+                      <h4 class="ui-nowrap">
+                        山景房标间 <span>送自助早餐</span>
+                      </h4>
+                      <p class="ui-nowrap">
+                        ￥<span>190.00</span> /晚 <em>剩余：26间</em>
+                      </p>
+                  </div>
+                  <div class="btn-box">
+                    <div class="add-item"><i class="iconfont icon-plus"></i></div>
+                  </div>
+              </li>
+              <li class="ui-border-t">
+                  <div class="ui-list-info">
+                      <h4 class="ui-nowrap">
+                        花园房标间 <span>送自助早餐</span>
+                      </h4>
+                      <p class="ui-nowrap">
+                        ￥<span>180.00</span> /晚 <em>剩余：21间</em>
+                      </p>
+                  </div>
+                  <div class="btn-box">
+                    <div class="add-item"><i class="iconfont icon-plus"></i></div>
+                  </div>
+              </li>
+              <li class="ui-border-t">
+                  <div class="ui-list-info">
+                      <h4 class="ui-nowrap">
+                        三人标间 <span>送自助早餐</span>
+                      </h4>
+                      <p class="ui-nowrap">
+                        ￥<span>210.00</span> /晚 <em>剩余：5间</em>
+                      </p>
+                  </div>
+                  <div class="btn-box">
+                    <div class="add-item"><i class="iconfont icon-plus"></i></div>
+                  </div>
+              </li>
+              <li class="ui-border-t">
+                  <div class="ui-list-info">
+                      <h4 class="ui-nowrap">
+                        经济间
+                      </h4>
+                      <p class="ui-nowrap">
+                        ￥<span>15.00</span> /床/晚  <em>剩余：53间</em>
+                      </p>
+                      <div class="room-info ui-nowrap">公用卫生间</div>
+                  </div>
+                  <div class="btn-box">
+                    <div class="add-item"><i class="iconfont icon-plus"></i></div>
+                  </div>
+              </li>
+          </ul>
+        </div>
+    </section>
+    <section id="bookDinner" class="fadeIn animated hide">
+      <header class="ui-header ui-header-positive ui-border-b">
+          <i class="ui-icon-return" onclick="history.back()"></i>
+            <h1>订餐服务</h1>
+          <a href="#" class="ui-btn">去订房</a>
+        </header>
+        <div id="dinnerList">
+          <ul class="ui-list ui-border-tb">
+              <li class="ui-border-t">
+                  <div class="ui-list-info">
+                      <h4 class="ui-nowrap">
+                        2荤2素<span>(凉菜)</span> + 8荤3素<span>(热菜)</span>
+                      </h4>
+                      <p class="ui-nowrap">
+                        1道小吃
+                      </p>
+                      <p class="ui-nowrap">
+                        ￥<span>500.00</span> /桌
+                      </p>
+                  </div>
+                  <div class="btn-box">
+                    <div class="add-item"><i class="iconfont icon-plus"></i></div>
+                  </div>
+              </li>
+              <li class="ui-border-t">
+                  <div class="ui-list-info">
+                      <h4 class="ui-nowrap">
+                        3荤3素<span>(凉菜)</span> + 8荤3素<span>(热菜)</span>
+                      </h4>
+                      <p class="ui-nowrap">
+                        1道汤 + 1道水果 + 2道小吃
+                      </p>
+                      <p class="ui-nowrap">
+                        ￥<span>600.00</span> /桌
+                      </p>
+                  </div>
+                  <div class="btn-box">
+                    <div class="add-item"><i class="iconfont icon-plus"></i></div>
+                  </div>
+              </li>
+              <li class="ui-border-t">
+                  <div class="ui-list-info">
+                      <h4 class="ui-nowrap">
+                        3荤3素<span>(凉菜)</span> + 8荤3素<span>(热菜)</span>
+                      </h4>
+                      <p class="ui-nowrap">
+                        1道汤 + 1道水果 + 2道小吃
+                      </p>
+                      <p class="ui-nowrap">
+                        ￥<span>700.00</span> /桌
+                      </p>
+                  </div>
+                  <div class="btn-box">
+                    <div class="add-item"><i class="iconfont icon-plus"></i></div>
+                  </div>
+              </li>
+              <li class="ui-border-t">
+                  <div class="ui-list-info">
+                      <h4 class="ui-nowrap">
+                        3荤3素<span>(凉菜)</span> + 9荤3素<span>(热菜)</span>
+                      </h4>
+                      <p class="ui-nowrap">
+                        1道汤 + 1道水果 + 2道小吃
+                      </p>
+                      <p class="ui-nowrap">
+                        ￥<span>800.00</span> /桌
+                      </p>
+                  </div>
+                  <div class="btn-box">
+                    <div class="add-item"><i class="iconfont icon-plus"></i></div>
+                  </div>
+              </li>
+              <li class="ui-border-t">
+                  <div class="ui-list-info">
+                      <h4 class="ui-nowrap">
+                        5荤4素<span>(凉菜)</span> + 10荤2素<span>(热菜)</span>
+                      </h4>
+                      <p class="ui-nowrap">
+                        1道汤 + 1道水果 + 3道小吃
+                      </p>
+                      <p class="ui-nowrap">
+                        ￥<span>1000.00</span> /桌
+                      </p>
+                  </div>
+                  <div class="btn-box">
+                    <div class="add-item"><i class="iconfont icon-plus"></i></div>
+                  </div>
+              </li>
+              <li class="ui-border-t">
+                  <div class="ui-list-info">
+                      <h4 class="ui-nowrap">
+                        5荤4素<span>(凉菜)</span> + 10荤2素<span>(热菜)</span>
+                      </h4>
+                      <p class="ui-nowrap">
+                        1道汤 + 1道水果 + 3道小吃
+                      </p>
+                      <p class="ui-nowrap">
+                        ￥<span>1200.00</span> /桌
+                      </p>
+                  </div>
+                  <div class="btn-box">
+                    <div class="add-item"><i class="iconfont icon-plus"></i></div>
+                  </div>
+              </li>
+          </ul>
+        </div>
+    </section>
+    <div id="cart" class="ui-border-t">
+      
+    </div>
+    <script type="text/template" id="cartTemplate">
+        <div class="cart">
+        <div>
+          <i class="iconfont icon-gouwuche"></i>
+          ￥<span id="sum">0.00</span>
+        </div>
+        <div class="disable">
+          暂无预定
+        </div>
+      </div>
+      <div class="item-list">
+          <h3 class="ui-border-t">订餐服务</h3>
+          <ul class="ui-list ui-border-tb">
+            <li class="ui-border-b">
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">三人标间</h4>
+                    <p class="ui-nowrap">2015-12-22</p>
+                </div>
+                <div class="price-box">
+                    ￥0.00
+                </div>
+                <div class="btn-box">
+                    <i class="iconfont icon-minus2"></i>
+                    <span>1</span>
+                    <i class="iconfont icon-plus"></i>
+                </div>
+            </li>
+        </ul>
+        <h3>订房服务</h3>
+        <ul class="ui-list ui-border-tb">
+            <li class="ui-border-b">
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">三人标间</h4>
+                    <p class="ui-nowrap">2015-12-22</p>
+                </div>
+                <div class="price-box">
+                    ￥0.00
+                </div>
+                <div class="btn-box">
+                    <i class="iconfont icon-minus2"></i>
+                    <span>1</span>
+                    <i class="iconfont icon-plus"></i>
+                </div>
+            </li>
+        </ul>
+      </div>
+        
+    </script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/zepto/zepto.js"></script>
+    <script src="/bower_components/frozenui/dist/js/frozen.js"></script>
+    <script src="/bower_components/underscore/underscore.js"></script>
+    <script src="/bower_components/backbone/backbone.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    
+    <!-- build:js(.) scripts/plugins.js -->
+
+    <!-- endbuild -->
+    
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/init.js"></script>
+    <script src="scripts/Router.js"></script>
+    <script src="scripts/view/Cart.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
